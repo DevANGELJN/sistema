@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+@font-face {
+    font-family: Soria;
+    src: url(../fonts/soria-font.ttf);
+}
+.gradient-custom-2 {    
+/* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to right, #280b6f, #6730ec, #7984ee, #d2f6fc);
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right, #280b6f, #6730ec, #7984ee, #d2f6fc);
+} 
+.container-login{
+    display: flex;
+    border-radius: 15px;
+    width: 30%;    
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.containerlogin{
+    display: flex;
+    background: #fff;
+    width: 100%;    
+    justify-content: center;
+    align-items: center;
+    margin:  auto;
+    padding-bottom: 30px;
+    flex-direction: column;
+    box-shadow: 5px 5px 15px gray;
+    border-radius: 20px;
+}
+
+.underline{
+    width: 150px;
+    margin-top: 10px;
+    height: 6px;
+    background: #6730ec;
+    border-radius: 9px;
+}
+.inputs{
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.input{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 420px;
+    height: 80px;
+    background: #eaeaea;
+    text-transform: capitalize;
+    border-radius:6px;
+}
+.icon{
+    color: #6730ec;
+    margin: 0 30px;
+    font-size: 100px;
+}
+.input input{
+    height: 50px;
+    width: 400px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #797979;
+    font-family: Inconsolata;
+    font-size: 19px;
+}
+.select{
+    padding: 0 90px;
+    color: #797979;
+    font-size: 19px;
+    text-transform: capitalize;
+    font-family: Inconsolata;
+    appearance: none ;
+    border: none;
+}
+.select::part(button){
+    cursor: pointer;
+    border-radius: .3em;
+    margin-right: 3em;
+}
+.select::part(listbox){
+    padding: .5em;
+    margin: .5em 0 0 .2em;
+}
+.option{
+    padding: .5em;
+    text-transform: capitalize;
+    &:hover{
+        background: rgb(218, 219, 240);
+    }
+}
+.icon-log{
+    color: #6730ec;
+    font-size: 30px;
+    padding: 30px;
+}
+
+.submit-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 60px auto;
+}
+.submit{
+    display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 200px;
+	height: 50px;
+	background: #6730ec;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 600;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: .3s ease all;
+	border-radius: 50px;
+	position: relative;
+	overflow: hidden;
+}
+.submit span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+.submit::after{
+    content: "";
+	width: 115%;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+    color: #000;
+	left: calc(-115% - 40px);
+	border-bottom: 80px solid #280b6f;
+	border-right: 40px solid transparent;
+	transition: .4s ease-in-out all;
+}
+.submit:hover::after{
+    left: 0;
+}
+@media (min-width: 768px) {
+    .gradient-form {
+        height: 100vh !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+    }
+}
+
+@media only screen and (max-width: 500px ) {
+    .container-login picture{
+        display: none;
+    }
+    .containerlogin{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .inputs{
+        margin-top: 55px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .input{
+        display: flex;
+        align-items: center;
+        margin: auto;
+        width: 250px;
+        height: 80px;
+        background: #eaeaea;
+        border-radius:6px;
+    }
+}

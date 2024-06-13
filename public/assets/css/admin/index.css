@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+
+.main-sidebar{
+    background-color: #280B6F!important;
+}
+
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active, .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active{
+    background-color: #6730EC!important;
+}
+[class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link.active, [class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link.active:focus, [class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link.active:hover{
+    background-color: #7984ee;
+    color: #FFFFFF;
+}
+.brand-text{
+    font-weight: 100;
+    font-size: 35px;
+    color: #D2F6FC;
+    font-family: Freeman;
+}
+.brand-link .brand-animation{
+    float: left;
+    width: 60px;
+    line-height: .8;
+    margin-left: .8rem;
+    margin-right: .5rem;
+    margin-top: -3px;
+    max-height: 33px;
+}
+.logout:hover{
+    background-color: rgba(255, 0, 0, 0.178);
+    color: #FFFFFF;
+}
+.action-icon{
+    color: #FFFFFF;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-capitalize{
+    text-transform: capitalize;
+}
+.modal-header-icon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-edit{
+    font-size: 70px;
+    color: #6730EC;
+}
